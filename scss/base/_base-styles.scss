@@ -1,0 +1,204 @@
+// =================
+// BASE STYLES
+// =================
+
+* {
+  box-sizing:border-box;
+}
+
+body {
+  background-color: $primary-color;
+  margin-top:0;
+  margin-right: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $heading-font;
+}
+
+h3 {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  color: $secondary-color;
+}
+
+h4 {
+  letter-spacing: .07em;
+  font-size: 1.5em;
+  color: $primary-color;
+}
+
+p {
+  font-family: $body-font;
+  @include mq('med') {
+  hyphens:auto;
+  hyphenate-limit-lines: 2;
+  hyphenate-limit-chars: 6 3 2;
+  hyphenate-limit-zone: 8%;
+  hyphenate-limit-last: always;
+  }
+}
+
+a {
+  text-decoration: none;
+  margin-top:0;
+  &:link,
+  &:visited {
+    color: $white;
+  }
+}
+
+nav {
+  margin-top: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: fixed;
+  width:100%;
+  background-color: $primary-color;
+  border-bottom: 10px solid rgba(255, 255, 255, .3);
+  z-index: 100;
+  @include b-shad;
+  @include mq('med') {
+    position: fixed;
+    width:100%;
+    background-color: $primary-color;
+    border-bottom: 10px solid rgba(255, 255, 255, .3);
+    z-index: 100;
+  }
+  ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left:0;
+    font-family: $heading-font;
+    text-transform: uppercase;
+    @include mq('med') {
+      float:right;
+      vertical-align: middle;
+      padding-right: 15px;
+    }
+    li {
+      text-align: center;
+      @include mq('med') {
+        display:inline-block;
+        padding-left:5px;
+        padding-right:5px;
+      }
+      a {
+        padding-top:10px;
+        padding-bottom:10px;
+        display: block;
+        letter-spacing: .22rem;
+        font-size: 1.3rem;
+        &:hover {
+          background-color: $white;
+          color: $primary-color;
+          &:active {
+            background-color: $secondary-color;
+            color: $white;
+          }
+        }
+        @include mq('med') {
+          padding-left:10px;
+          padding-right:10px;
+          font-size: 1.2em;
+          &:hover {
+            background-color: rgba($primary-color,0);
+            color:$secondary-color;
+            &:active {
+              background-color: rgba($primary-color,0);
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+hr {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border: none;
+}
+
+header {
+  background-color: $primary-color;
+  margin-top:0;
+}
+
+form {
+  margin-bottom: 100px;
+}
+
+input[type="text"],
+input[type="Email"] {
+  height: 50px;
+  font-size: 1.3em;
+  border-radius: 5px;
+  border: none;
+  text-indent: 15px;
+  margin-top: 10px;
+  background-color: rgb(255, 255, 224);
+  @include mq('med') {
+    width: 70%;
+  }
+  &:focus {
+    background-color: #ffffff;
+    outline: 0;
+    border: 3px solid rgba($primary-color, .8);
+  }
+}
+
+button[type="button"] {
+  width: 25%;
+  height:50px;
+  margin-top: 60px;
+  border-radius: 10px;
+  background-color: $primary-color;
+  border:none;
+  color: $secondary-color;
+  font-size: 1.3em;
+  letter-spacing: .02em;
+  text-transform: none;
+  transition: opacity .3s ease-out,
+              transform .2s;
+  min-width: 100px;
+  &:focus {
+    outline: 0;
+  }
+  &:hover {
+    cursor: pointer;
+    opacity: .87;
+  }
+  &:active {
+    background-color: $secondary-color;
+    color: $primary-color;
+    border: 3px solid $primary-color;
+    transform: scale(.95);
+  }
+}
+
+footer {
+  background-color: #658879;
+  color: #F1F7ED;
+  padding-top:20px;
+  padding-bottom:20px;
+  margin:0;
+  text-align: center;
+  @include mq('med') {
+  display:flex;
+
+  }
+  p {
+    flex:1;
+    @include mq('med') {
+    padding-left:50px;
+    text-align: left;
+    align-self: center;
+    }
+  }
+}

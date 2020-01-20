@@ -1,0 +1,24 @@
+// =================
+// VARIABLES
+// =================
+
+// COLORS
+
+$primary-color: #22553F;
+$primary-color-dark: darken($primary-color, 7%);
+$primary-color-light: lighten($primary-color, 4%);
+
+$secondary-color: #ffe36a;
+$secondary-color-dark: darken($secondary-color, 2%);
+
+$white: #F1F7ED;
+
+// FONTS
+
+$heading-font: 'Rubik', sans-serif;
+$body-font: 'Spectral', serif;
+
+// BREAKPOINTS
+
+$break-m: 769px;
+$break-l: 1024px;
