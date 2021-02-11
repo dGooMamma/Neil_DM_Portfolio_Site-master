@@ -611,13 +611,13 @@ HOMEPAGE
 
 .tokens {
   text-align: center;
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   transform: translateY(5px);
 }
 
-.tokens:last-child {
+.tokens img:nth-child(5) {
   display:none;
 }
 
@@ -628,7 +628,7 @@ HOMEPAGE
   .tokens img {
     width: 100px;
   }
-  .tokens:last-child {
+  .tokens img:nth-child(5) {
   display:inline-block;
 }
 }
