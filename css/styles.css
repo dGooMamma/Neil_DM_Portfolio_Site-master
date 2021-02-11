@@ -161,7 +161,7 @@ input[type=Email]:focus {
   border: 3px solid rgba(34, 85, 63, 0.8);
 }
 
-button[type=button] {
+button[type=submit] {
   width: 25%;
   height: 50px;
   margin-top: 60px;
@@ -175,14 +175,14 @@ button[type=button] {
   transition: opacity 0.3s ease-out, transform 0.2s;
   min-width: 100px;
 }
-button[type=button]:focus {
+button[type=submit]:focus {
   outline: 0;
 }
-button[type=button]:hover {
+button[type=submit]:hover {
   cursor: pointer;
   opacity: 0.87;
 }
-button[type=button]:active {
+button[type=submit]:active {
   background-color: #ffe36a;
   color: #22553F;
   border: 3px solid #22553F;
