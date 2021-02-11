@@ -616,6 +616,11 @@ HOMEPAGE
   margin-right: auto;
   transform: translateY(5px);
 }
+
+.tokens:last-child {
+  display:none;
+}
+
 .tokens img {
   width: 75px;
 }
@@ -623,6 +628,9 @@ HOMEPAGE
   .tokens img {
     width: 100px;
   }
+  .tokens:last-child {
+  display:inline;
+}
 }
 
 /* -------------------------------------------------
