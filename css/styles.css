@@ -629,7 +629,7 @@ HOMEPAGE
     width: 100px;
   }
   .tokens:last-child {
-  display:inline;
+  display:inline-block;
 }
 }
 
