@@ -134,6 +134,12 @@ header {
   margin-top: 0;
 }
 
+figcaption {
+  color: gray;
+  padding-top:10px;
+  font-size: .5rem;
+}
+
 form {
   margin-bottom: 100px;
 }
