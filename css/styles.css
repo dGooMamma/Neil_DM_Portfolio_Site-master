@@ -135,9 +135,9 @@ header {
 }
 
 figcaption {
-  color: rgba(255,255,255, 0.7);
-  padding-top:8px;
-  font-size: .75rem;
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: 8px;
+  font-size: 0.75em;
 }
 
 form {
